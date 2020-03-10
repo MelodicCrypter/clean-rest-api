@@ -16,6 +16,7 @@ But this REST API can be used in any type of application. From to-do's to notes,
 - Lodash
 - NodeMailer
 
+<br>
 
 ### Public Endpoints ###
 ##### *No authentication at all* #####
@@ -42,3 +43,10 @@ But this REST API can be used in any type of application. From to-do's to notes,
  - /verse/:id => PATCH updates specific verse or text
  - /verse/:id => DELETE deletes specific verse or text
  - /user/me => user's info or profile
+
+<br>
+
+### You can use this to quickly start your own API server ###
+- just create a MongoDB database then hook it up here
+- create your own .env files for all the tokens and email configs
+- then just decide what kind of application you're going to build, for this use-case I created an API for bible verses
