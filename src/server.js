@@ -23,6 +23,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middlewares: Security
+// Consider CSP and SRI for more security features
 app.use(cors({ origin: ['http://localhost:8000', /\.netlify\.com$/] })); // Cross-Origin
 app.use(helmet()); // Security for HTTP requests
 app.use(compression({ filter: shouldCompress, threshold: 0 })); // Compresses response
